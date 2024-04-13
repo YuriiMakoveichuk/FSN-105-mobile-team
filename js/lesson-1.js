@@ -62,3 +62,32 @@
 // }
 
 // ageMaxim >= 0 && ageMaxim <= 16 ? console.log('діти') : ageMaxim >= 17 && ageMaxim <= 60 ? console.log('дорослі') : ageMaxim >= 61 && ageMaxim <= 100 ? console.log('пенсіонери') : console.log('горец)');
+
+//* Конструкція switch
+// Запитай користувача у модальному вікні, який з напоїв він бажає придбати - "Кава", "Чай" чи "Сік",
+// та залежно від виду напою оголоси суму досплати.Використовувати switch.
+
+//const drink = prompt("choose a drink");
+function orderDrink(drink) {
+  let price = 0;
+  switch (drink) {
+    case "tea":
+      price = 40;
+      break;
+
+    case "coffe":
+      price = 60;
+      break;
+
+    case "juce":
+      price = 50;
+      break;
+
+    default:
+      return "Drink is not exist";
+  }
+  return `Your order ${price} UAH`;
+}
+
+const result = orderDrink(drink);
+alert(result);
