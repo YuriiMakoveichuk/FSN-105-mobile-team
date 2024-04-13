@@ -144,8 +144,42 @@
 // ***
 // ****
 // *****
-let star = "*";
-for (let i = 0; i < 7; i++) {
-  console.log(star);
-  star += "*";
-}
+// let star = "*";
+// for (let i = 0; i < 7; i++) {
+//   console.log(star);
+//   star += "*";
+// }
+
+// Порахуйте суму чисел від 12 до 27
+
+// let total = 0;
+
+// for (let i = 12; i <= 27; i++) {
+//     console.log(`${total} + ${i} = ${total+i}`);
+//     total += i; 
+// }
+
+// console.log(total); 
+
+
+//Якщо число ділитися на 3 повертати
+//fizz якщо ділитися на 5 повертати buzz
+//Якщо ділитися на 3 і на 5 повернути fizzbuzz
+
+// const number = 60;
+
+// function fn(a){
+// for (let index = 1; index <= a; index++) {
+//     if (index % 3 === 0 && index % 5 === 0) { 
+//        console.log("fizzbuzz");
+//    } else if (index % 5 === 0) {
+//        console.log("buzz");
+//    } else if (index % 3 === 0) {
+//        console.log("fizz");
+//     } else {
+//         console.log(index);
+//    }
+//     }
+// }
+
+fn(number);
