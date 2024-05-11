@@ -156,11 +156,10 @@
 
 // for (let i = 12; i <= 27; i++) {
 //     console.log(`${total} + ${i} = ${total+i}`);
-//     total += i; 
+//     total += i;
 // }
 
-// console.log(total); 
-
+// console.log(total);
 
 //Якщо число ділитися на 3 повертати
 //fizz якщо ділитися на 5 повертати buzz
@@ -170,7 +169,7 @@
 
 // function fn(a){
 // for (let index = 1; index <= a; index++) {
-//     if (index % 3 === 0 && index % 5 === 0) { 
+//     if (index % 3 === 0 && index % 5 === 0) {
 //        console.log("fizzbuzz");
 //    } else if (index % 5 === 0) {
 //        console.log("buzz");
@@ -182,4 +181,4 @@
 //     }
 // }
 
-fn(number);
+// fn(number);
