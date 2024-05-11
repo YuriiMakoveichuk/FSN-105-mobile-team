@@ -36,6 +36,8 @@
 
 // const numbers = [2, 4, 6, 8, 10];
 
+// const checkEvenArray = (arr) => arr.every((el) => el % 2 === 0);
+
 // const res = checkEvenArray(numbers);
 // console.log(res);
 
@@ -44,15 +46,19 @@
 
 // const numbers = [2, 1, 6, 8, 9, 10, 12];
 
-// console.log('oddNumber: ', oddNumberInArray(numbers));
+// const oddNumberInArray = (arr) => arr.find((el) => el % 2 !== 0);
+
+// console.log("oddNumber: ", oddNumberInArray(numbers));
 
 //TODO:=========task-06=================
 // Дано масив чисел [1, 2, 3, 4, 5]. Знайдіть перший елемент, більший за 3. Очікуваний результат: 4.
 
 // const arr = [1, 2, 3, 4, 5];
 
-// const res = getNumber(arr, 1);
-// console.log('object :>> ', res);
+// const getNumber = (arr, value) => arr.find((el) => el > value);
+
+// const res = getNumber(arr, 3);
+// console.log("object :>> ", res);
 
 //TODO:=========task-07=================
 // Відсортуйте масив чисел [4, 2, 5, 1, 3] у порядку зростання. Очікуваний результат: [1, 2, 3, 4, 5].
