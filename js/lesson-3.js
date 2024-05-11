@@ -126,8 +126,6 @@
  * Оголоси приватні властивості #login #email, доступ до яких зроби через геттер та сеттер login email
  */
 
-const client = new Client('Mango', 'mango@gmail.com');
-
 //! Статичний метод
 //TODO:=========task-03=================
 /**
