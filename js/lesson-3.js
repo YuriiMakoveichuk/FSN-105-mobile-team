@@ -140,6 +140,49 @@
  * Об'єкт класу може проводити послідовні операції у вигляді ланцюжка
  */
 
+// class Calculator {
+
+//   constructor() {
+//     this.result = 0;
+//   }
+//   number(value) {
+//     this.result = value;
+//     return this;
+//   }
+
+//   getResult() {
+//     return this.result;
+//   }
+
+//   add(num) {
+//     this.result += num;
+//     return this;
+//   }
+
+//   substruct(num) {
+//     this.result -= num;
+//     return this;
+//   }
+
+//   divide(num) {
+//     this.result /= num;
+//     return this;
+//   }
+
+//   multiply(num) {
+//     this.result *= num;
+//     return this;
+//   }
+// }
+
+// const calc = new Calculator();
+// console.log(calc.result);
+
+// const res = calc.number(10).add(5).substruct(10).multiply(2).divide(5).getResult();
+// console.log(res);
+
+
+
 //! Приватні властивості
 //TODO:=========task-02=================
 /**
@@ -147,6 +190,40 @@
  *
  * Оголоси приватні властивості #login #email, доступ до яких зроби через геттер та сеттер login email
  */
+
+// class Client {
+//   #login;
+//   #email;
+//   constructor(login, email) {
+//     this.#email = email;
+//     this.#login = login;
+//   }
+
+//   get login() {
+//     return this.#login;
+//   }
+
+//   set changeLogin(newLogin) {
+//     this.#login = newLogin;
+//   }
+
+//   get email() {
+//     return this.#email;
+//   }
+
+//   set changeEmail(newEmail) {
+//     this.#email = newEmail;
+//   }
+// }
+
+// const client = new Client('mango', 'mango@gmail.com');
+
+// client.changeLogin = 'kiwi';
+// console.log(client.login);
+
+
+// client.changeEmail = 'kiwi@gmail.com';
+// console.log(client.email);
 
 //! Статичний метод
 //TODO:=========task-03=================
