@@ -181,8 +181,6 @@
 // const res = calc.number(10).add(5).substruct(10).multiply(2).divide(5).getResult();
 // console.log(res);
 
-
-
 //! Приватні властивості
 //TODO:=========task-02=================
 /**
@@ -221,7 +219,6 @@
 // client.changeLogin = 'kiwi';
 // console.log(client.login);
 
-
 // client.changeEmail = 'kiwi@gmail.com';
 // console.log(client.email);
 
@@ -237,22 +234,40 @@
  * - updatePriority(text, newPriority)
  */
 
+// class Notes {
+//   static Priority() {
+//     return {
+//       LOW: "low",
+//       HIGHT: "higth",
+//     };
+//   }
+//   constructor() {
+//     this.items = [];
+//   }
+//   addNote(note) {
+//     this.items.push(note);
+//   }
+//   removeNote(noteName) {
+//     this.items = this.items.filter((item) => item.text !== noteName);
+//   }
+//   updatePriority(text, newPriority) {
+//     const note = this.items.find((el) => el.text === text);
+//     note.priority = newPriority;
+//   }
+// }
+
 // const note1 = new Notes();
 // console.log(note1);
-// note1.addNote({ text: 'Купити хліб', priority: Notes.Priority().LOW });
+// console.log(Notes);
+// note1.addNote({ text: "Купити хліб", priority: Notes.Priority().LOW });
 // note1.addNote({
-//   text: 'Сходити на практику',
+//   text: "Сходити на практику",
 //   priority: Notes.Priority().HIGHT,
 // });
+// note1.removeNote("Купити хліб");
 // console.table(note1.items);
 
-// note1.removeNote('Купити хліб');
-// console.table(note1.items);
-
-// note1.updatePriority({
-//   text: 'Сходити на практику',
-//   newPriority: Notes.Priority().LOW,
-// });
+// note1.updatePriority("Сходити на практику", Notes.Priority().LOW);
 // console.table(note1.items);
 // console.log(note1);
 
