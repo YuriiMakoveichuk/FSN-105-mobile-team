@@ -1,102 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-  <body>
-    <!-- Task - 01 -->
-    <ul class="box-list number-container"></ul>
-    <ul class="film-list"></ul>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-    <!-- Task - 02 -->
-    <p class="task-title">Task 2</p>
-    <div class="input-container">
-      <input class="js-password-input" type="text" name="password" />
-      <button class="js-password-button">Приховати</button>
+<body>
+  <!-- Task - 01 -->
+  <ul class="box-list number-container"></ul>
+  <ul class="film-list"></ul>
+
+  <!-- Task - 02 -->
+  <p class="task-title">Task 2</p>
+  <div class="input-container">
+    <input class="js-password-input" type="password" name="password" />
+    <button class="js-password-button">Показати</button>
+  </div>
+
+  <!-- Task - 03 -->
+  <p class="task-title">Task 4</p>
+  <div>
+    <div class="box"></div>
+    <button class="js-decrease" id="decrease">Зменьшити</button>
+    <button class="js-increase" id="increase">Збільшити</button>
+  </div>
+
+  <!-- Task - 04 -->
+  <section>
+    <div class="container">
+      <p class="task-title">Task 01</p>
+
+      <ul class="accordion-list list js-accordion-list">
+        <li class="accordion-list-item">
+          <button class="accordion js-accordion-btn">Item 1</button>
+          <div class="panel js-panel">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, labore deleniti ullam esse consequatur voluptatem
+              veritatis, mollitia voluptas voluptatibus quia eveniet veniam,
+              eaque corrupti id iste! Consequuntur temporibus doloribus
+              assumenda!
+            </p>
+          </div>
+        </li>
+
+        <li class="accordion-list-item">
+          <button class="accordion js-accordion-btn">Item 2</button>
+          <div class="panel js-panel">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, labore deleniti ullam esse consequatur voluptatem
+              veritatis, mollitia voluptas voluptatibus quia eveniet veniam,
+              eaque corrupti id iste! Consequuntur temporibus doloribus
+              assumenda!
+            </p>
+          </div>
+        </li>
+
+        <li class="accordion-list-item">
+          <button class="accordion js-accordion-btn">Item 3</button>
+          <div class="panel js-panel">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, labore deleniti ullam esse consequatur voluptatem
+              veritatis, mollitia voluptas voluptatibus quia eveniet veniam,
+              eaque corrupti id iste! Consequuntur temporibus doloribus
+              assumenda!
+            </p>
+          </div>
+        </li>
+      </ul>
     </div>
+  </section>
 
-    <!-- Task - 03 -->
-    <p class="task-title">Task 4</p>
-    <div>
-      <div class="box"></div>
-      <button class="js-decrease" id="decrease">Зменьшити</button>
-      <button class="js-increase" id="increase">Збільшити</button>
+  <!-- Task - 05 -->
+  <section>
+    <div class="container">
+      <p class="task-title">Task 02</p>
+
+      <ul class="pagination js-pagination">
+        <li data-type="prev" class="pagination__item">&laquo;</li>
+        <li data-type="page" data-page="1" class="pagination__item active">
+          1
+        </li>
+        <li data-type="page" data-page="2" class="pagination__item">2</li>
+        <li data-type="page" data-page="3" class="pagination__item">3</li>
+        <li data-type="page" data-page="4" class="pagination__item">4</li>
+        <li data-type="page" data-page="5" class="pagination__item">5</li>
+        <li data-type="next" class="pagination__item">&raquo;</li>
+      </ul>
     </div>
+  </section>
+  <!-- <script type="module" src="./js/lesson-1.js"></script> -->
+  <!-- <script type="module" src="./js/lesson-2.js"></script> -->
+  <!-- <script type="module" src="./js/lesson-3.js"></script> -->
+  <script type="module" src="./js/lesson-4.js"></script>
+</body>
 
-    <!-- Task - 04 -->
-    <section>
-      <div class="container">
-        <p class="task-title">Task 01</p>
-
-        <ul class="accordion-list list js-accordion-list">
-          <li class="accordion-list-item">
-            <button class="accordion js-accordion-btn">Item 1</button>
-            <div class="panel js-panel">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore, labore deleniti ullam esse consequatur voluptatem
-                veritatis, mollitia voluptas voluptatibus quia eveniet veniam,
-                eaque corrupti id iste! Consequuntur temporibus doloribus
-                assumenda!
-              </p>
-            </div>
-          </li>
-
-          <li class="accordion-list-item">
-            <button class="accordion js-accordion-btn">Item 2</button>
-            <div class="panel js-panel">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore, labore deleniti ullam esse consequatur voluptatem
-                veritatis, mollitia voluptas voluptatibus quia eveniet veniam,
-                eaque corrupti id iste! Consequuntur temporibus doloribus
-                assumenda!
-              </p>
-            </div>
-          </li>
-
-          <li class="accordion-list-item">
-            <button class="accordion js-accordion-btn">Item 3</button>
-            <div class="panel js-panel">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore, labore deleniti ullam esse consequatur voluptatem
-                veritatis, mollitia voluptas voluptatibus quia eveniet veniam,
-                eaque corrupti id iste! Consequuntur temporibus doloribus
-                assumenda!
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Task - 05 -->
-    <section>
-      <div class="container">
-        <p class="task-title">Task 02</p>
-
-        <ul class="pagination js-pagination">
-          <li data-type="prev" class="pagination__item">&laquo;</li>
-          <li data-type="page" data-page="1" class="pagination__item active">
-            1
-          </li>
-          <li data-type="page" data-page="2" class="pagination__item">2</li>
-          <li data-type="page" data-page="3" class="pagination__item">3</li>
-          <li data-type="page" data-page="4" class="pagination__item">4</li>
-          <li data-type="page" data-page="5" class="pagination__item">5</li>
-          <li data-type="next" class="pagination__item">&raquo;</li>
-        </ul>
-      </div>
-    </section>
-    <!-- <script type="module" src="./js/lesson-1.js"></script> -->
-    <!-- <script type="module" src="./js/lesson-2.js"></script> -->
-    <!-- <script type="module" src="./js/lesson-3.js"></script> -->
-    <script type="module" src="./js/lesson-4.js"></script>
-  </body>
 </html>

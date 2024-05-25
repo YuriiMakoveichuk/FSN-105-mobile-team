@@ -102,6 +102,18 @@ watchedFilms.forEach(
 //TODO:=========task-03=================
 // Кнопка "Приховати" ховає текст і замінює назву кнопки на "Розкрити", у разі повторного натискання текст знову стає доступним і кнопка набуває початкового вигляду.
 
+const btn = document.querySelector(".js-password-button");
+const inputElem = document.querySelector(".js-password-input");
+btn.addEventListener("click", handlerClick);
+function handlerClick() {
+  if (inputElem.type === "password") {
+    inputElem.type = "text";
+    btn.textContent = "Приховати";
+  } else {
+    inputElem.type = "password";
+    btn.textContent = "Показати";
+  }
+}
 //TODO:=========task-04=================
 // Кнопка "Зменшити" робить квадрат меншим на 20 пікселів, кнопка "Збільшити" - робить більшим на 10 пікселів.
 
