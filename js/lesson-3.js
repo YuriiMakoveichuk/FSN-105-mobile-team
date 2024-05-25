@@ -285,8 +285,20 @@
   |============================
 */
 
-// const person = new Person('John', 30, 'male', 'john@hmail.com');
+class Person {
+  constructor(name, age, gender, email) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.email = email;
+  }
+  getDetails() {
+    return this;
+  }
+}
 
+const person = new Person("John", 30, "male", "john@hmail.com");
+console.log(person.getDetails());
 /**
   |=============Employee===============
   |Створіть клас `Employee`, який розширює клас `Person` і містить наступні властивості:
@@ -295,13 +307,22 @@
   |  ##### Крім того, клас `Employee` має мати метод `getEmployeeDetails()`, який повертає об'єкт з ідентифікатором співробітника, зарплатою та відділом, в якому працює співробітник.
   |============================
 */
-
+// class Employee extends Person {
+//   constructor(salary, department, name, age, gender, email) {
+//     super(name, age, gender, email);
+//     this.salary = salary;
+//     this.department = department;
+//   }
+//   getEmployeeDetails() {
+//     return this.getDetails();
+//   }
+// }
 // const employee = new Employee(
 //   5000,
-//   'developer',
-//   'Bob',
+//   "developer",
+//   "Bob",
 //   45,
-//   'male',
-//   'bob@hmail.com'
+//   "male",
+//   "bob@hmail.com"
 // );
 // console.log(employee.getEmployeeDetails());
