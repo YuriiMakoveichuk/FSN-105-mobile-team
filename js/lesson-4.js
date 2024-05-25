@@ -117,6 +117,26 @@ function handlerClick() {
 //TODO:=========task-04=================
 // Кнопка "Зменшити" робить квадрат меншим на 20 пікселів, кнопка "Збільшити" - робить більшим на 10 пікселів.
 
+const decreseBtn = document.querySelector(".js-decrease");
+const increseBtn = document.querySelector(".js-increase");
+const div = document.querySelector(".box");
+
+decreseBtn.addEventListener("click", onclick);
+increseBtn.addEventListener("click", onclick);
+
+function onclick(event) {
+  const currentSize = div.offsetWidth;
+
+  if (event.target.id === "increase") {
+    div.style.width = currentSize + 20 + "px";
+    div.style.height = currentSize + 20 + "px";
+  }
+  if (event.target.id === "decrease") {
+    div.style.width = currentSize - 20 + "px";
+    div.style.height = currentSize - 20 + "px";
+  }
+}
+
 //TODO:=========task-05=======Accordion==========
 /**
  * Викоритовуй шаблон акордеон меню з файлу html та напиши наступний функціонал:
@@ -124,9 +144,51 @@ function handlerClick() {
  * розкритий текст приховується.Нажимаючи на інші елементи меню, попередньо відкриті елементи не закриваються.
  */
 
+const accardionList = document.querySelector(".js-accordion-list");
+
+accardionList.addEventListener("click", (event) => {
+  if (event.target.nodeName !== "BUTTON") {
+    return;
+  }
+  event.target.nextElementSibling.classList.toggle("active");
+});
+
 //TODO:=========task-06=======Pagination==========
 /**
  * Викоритовуй шаблон пагінації з файлу html для розробки функціоналу пагінатора.
  * Використовуй поширення подій.Додавай клас`active` на поточну сторінку. Створи допоміжну функцію`updateActivePage`, яка повинна обновляти активний клас.
  * Функція`handleClick`повинна викликатися коли відбувається клік на елементі`pagination`.
  */
+
+const paginationList = document.querySelector(".pagination");
+
+paginationList.addEventListener("click", (event) => {
+  if (event.target.nodeName !== "LI") {
+    return;
+  }
+  const currentBtn = event.target;
+  const activeBtn = paginationList.querySelector(".active");
+
+  if (currentBtn.dataset.type === "page") {
+    activeBtn.classList.remove("active");
+    currentBtn.classList.add("active");
+  }
+
+  if (
+    currentBtn.dataset.type === "next" &&
+    activeBtn.nextElementSibling.dataset.type === "page"
+  ) {
+    activeBtn.classList.remove("active");
+    activeBtn.nextElementSibling.classList.add("active");
+  }
+
+  if (
+    currentBtn.dataset.type === "prev" &&
+    activeBtn.previousElementSibling.dataset.type === "page"
+  ) {
+    activeBtn.classList.remove("active");
+    activeBtn.previousElementSibling.classList.add("active");
+  }
+
+  console.log(paginationList.querySelector(".active"));
+});
