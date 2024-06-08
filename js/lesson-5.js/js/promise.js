@@ -7,7 +7,14 @@
 // function greet() {
 //   return 'hello world';
 // }
-
+// function greet() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve('Hello world')
+//     }, 2000)
+//   })
+// }
+// greet().then( res => {console.log(res)});
 //TODO:====================02==========================
 /**
  * Перероби код так, щоб усі дані збиралися
@@ -59,15 +66,24 @@ const getLastData = () =>
  * Якщо значення не парне, вирішуй проміс і повертай "odd" через 2 секунди.
  */
 
-const value = prompt('Paste value');
-checkValue(value).then(console.log).catch(console.log);
+const value = prompt('Paste value:');
 
 function checkValue(value) {
-  return new Promise((resolve, reject) => {
-    if (!value || isNaN(value)) {
-      return reject('error');
+  return new Promise((res, rej) => {
+    if(isNaN(value)) {
+      return rej('Error')
+    } 
+
+    if(value%2 === 0) {
+      setTimeout(() => {
+       return  res('Even')
+      }, 1000)
+    } else {
+      setTimeout(() => {
+       return res('Odd')
+      }, 2000)
     }
-    if (value % 2 === 0) setTimeout(() => resolve('even'), 1000);
-    setTimeout(() => resolve('odd'), 2000);
-  });
+  })
 }
+
+checkValue(value).then((res) => console.log(res, ':then')).catch((err) => console.log(err, ': catch'));
